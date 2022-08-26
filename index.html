@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>SCANDI</title>
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
     <body>
         <header class="header" id="header">
             <div class="wrapper-header">
                     <div class="header-logo">
                         <a href="#main" class="link logo-link">
-                            <img src="/images/logo.png" alt="логотип компании SCANDI" width="25" height="25">
+                            <img src="./images/logo.png" alt="логотип компании SCANDI" width="25" height="25">
                             <p class="logo-text">SCANDI</p>
                         </a>
                         
@@ -42,22 +42,24 @@
         </header>
         <main id="main">
             <section class="main-section" id="main-section">
-                <div class="container wrapper-main">
+                <div class="wrapper-main">
                     <div class="main-content">
                         <h1 class="main-title">Поможем сделать вашу квартиру уютнее</h2>
-                        <p class="main-text">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины 
-                            и помогаем организовать доставку
-                        </p>
+                        <div class="main-text">
+                            <p>Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины 
+                                и помогаем организовать доставку
+                            </p>
+                        </div>
                         <a class="main-link-a" href="#feedback" title="Оставить заявку">Оставить заявку</a>     
                     </div>
                 </div>
             </section>
     
             <section class="about" id="about">
-                <div class="container">
+                
                     <h2 class="title about-title">О нас</h2>
                     <div class="half-container">
-                        <img src="/pictures/about.png" alt="О нас" class="about_img" titele="О нас">
+                        <img src="./pictures/about.png" alt="О нас" class="about_img" titele="О нас">
                         <div class="about-text">
                             <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. 
                                 Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то, 
@@ -66,81 +68,76 @@
                                 что действительно достойно моего дома!»</p>
                         </div>
                     </div>
-                </div>
+                
             </section>
             <section class="advantages" id="advantages">
                 <ul class="list advantages-list">
                     <li class="advantages-item">
-                        <span>5</span>
-                        <span>лет опыта</span>
+                        <span class="advantages_stat-number">5</span>
+                        <span class="advantages_stat-description">лет опыта</span>
                     </li>
                     <li class="advantages-item">
-                        <span>100</span>
-                        <span>проектов</span>
+                        <span class="advantages_stat-number">100</span>
+                        <span class="advantages_stat-description">проектов</span>
                     </li>
                     <li class="advantages-item">
-                        <span>10</span>
-                        <span>наград</span>
+                        <span class="advantages_stat-number">10</span>
+                        <span class="advantages_stat-description">наград</span>
                     </li>
                 </ul>
             </section>
 
             <section class="portfolio" id="portfolio">
                 <h2 class="title title-portfolio">Наши работы</h2>
-                <div class="container">
-                    
+                <div class="portfolio-iner">
                     <div class="element1">
                         <div class="portfolio-discription">
-                            <h3 class="title title-3">Квартира-студия 30 кв.м.</h3>
-                            <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер,
+                            <h3 class="title-3">Квартира-студия 30 кв.м.</h3>
+                            <p class="portfolio-text" >В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер,
                                  отсылающий к виллам островов Бали.</p>
                         </div>
                     </div>
-                    <img src="/pictures/portfolio/rectangle2.jpg" alt="Квартира-студия 30 кв.м." width="692" height="451">
-                    <img src="/pictures/portfolio/rectangle3.jpg" alt="Квартира-студия 30 кв.м." width="692" height="451">
-                    <img src="/pictures/portfolio/rectangle4.jpg" alt="Квартира-студия 30 кв.м." width="488" height="451">
-                    <button class="button" type="button">Смотреть ещё</button>
+                    <img src="./pictures/portfolio/rectangle2.jpg" alt="Квартира-студия 30 кв.м." width="692" height="451">
+                    <img src="./pictures/portfolio/rectangle3.jpg" alt="Квартира-студия 30 кв.м." width="692" height="451">
+                    <img src="./pictures/portfolio/rectangle4.jpg" alt="Квартира-студия 30 кв.м." width="488" height="451">
+                    
                 </div>
+                
+                <button class="portfolio-button" type="button">Смотреть ещё</button>
             </section>
     
             <section class="team" id="team">
-                <h2 class="title">Команда</h2>
-                <div class="container">
-                    <ul class="list team-unit">
+                <h2 class="title team-title">Команда</h2>
+                    <ul class="list team-list">
                         <li class="team-unit">
-                            <img src="/pictures/team/Masha.jpg" alt="Маша">
+                            <img src="./pictures/team/Masha.jpg" alt="Маша">
                             <p class="team-text">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.</p>
                         </li>
                         <li class="team-unit">
-                            <img src="/pictures/team/Sasha.jpg" alt="Саша">
+                            <img src="./pictures/team/Sasha.jpg" alt="Саша">
                             <p class="team-text">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы и ответит на все вопросы.</p>
                         </li>
                         <li class="team-unit">
-                            <img src="/pictures/team/Kate.jpg" alt="Катя">
+                            <img src="./pictures/team/Kate.jpg" alt="Катя">
                             <p class="team-text">Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обустроить дом так, чтобы вам понравилось.</p>
                         </li>
-                    </ul>
-                </div>
+                    </ul>              
             </section>
     
             <section class="how-to-do" id="how-to-do">
-                <div class="container">
-                    <h2 class="title">Как мы работаем</h2>
-                    <ol class="list">
-                        <li>
-                            <img src="/images/ellipse_number.png" alt="1">
+                <div class="work-wrapper">
+                    <h2 class="title work-title">Как мы работаем</h2>
+                    <ol class="list work-list">
+                        <li class="work-item">
                             <p class="work-text">Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</p>
                         </li>
-                        <li>
-                            <img src="/images/ellipse_number.png" alt="2">
+                        <li class="work-item">
                             <p class="work-text">Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</p>
                         </li>
-                        <li>
-                            <img src="/images/ellipse_number.png" alt="3">
+                        <li class="work-item">
                             <P class="work-text">Находим нужные магазины, помогаем с доставкой и оплатой товаров.</P>
                         </li>
-                        <li>
-                            <img src="/images/ellipse_number.png" alt="4">
+                        <li class="work-item">
                             <p class="work-text">Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</p>
                         </li>
                     </ol>
@@ -149,10 +146,10 @@
     
             <article class="review" id="review">
                 <h2 class="title">Отзывы</h2>
-                <div class="container">
-                    <img src="/images/circle_left.png" alt="назад">
+                <div class="review-wrapper">
+                    <button class="review-button review-button-back" type="button"></button>
                     <div class="review-text">
-                        <blockquote>
+                        <blockquote class="review-text-quote">
                             <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
                             <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко! Буду советовать и своим друзьям к вам обращаться!»</p>
                             <p>Буду советовать и своим друзьям к вам обращаться!»</p>
@@ -160,37 +157,33 @@
                         </blockquote>
                     </div>
                     <div class="review-photo">
-                        <img src="/pictures/review/review1.jpg" alt="Фото 1 объекта Анны Беловской" width="407" height="272">
-                        <img src="/pictures/review/review2.jpg" alt="Фото 2 объекта Анны Беловской" width="407" height="272">
+                        <img src="./pictures/review/review1.jpg" alt="Фото 1 объекта Анны Беловской" width="407" height="272">
+                        <img src="./pictures/review/review2.jpg" alt="Фото 2 объекта Анны Беловской" width="407" height="272">
                     </div>
-                    <img src="/images/circle_right.png" alt="вперёд">
+                    <button class="review-button review-button-next" type="button"></button>
                 </div>
             </article>
     
-            <section class="feedback" id="feedback">
-               <div class="container">
-                    <div class="container-feedback">
+            <section class="feedback" id="feedback">              
+                    <div class="feedback-wrapper">
                         <div class="form">
-                            <h2 class="title">Оставить заявку</h2>
-                            <p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+                            <h2 class="title form-title">Оставить заявку</h2>
+                            <p class="form-text">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
                             <form>
-                                <input type="text" placeholder="Ваше имя" name="name" id="name">
-                                <input type="tel" placeholder="Введите телефон" name="phone" id="phone">
-                                <button type="submit">Оставить заявку</button>
+                                <input class="input-area" type="text" placeholder="Ваше имя" name="name" id="name">
+                                <input class="input-area" type="tel" placeholder="Введите телефон" name="phone" id="phone">
+                                <button class="form-button" type="submit">Оставить заявку</button>
                             </form>
-                        </div>
-                        <div class="map">
-                            <img src="/pictures/map.png" alt="Картинка карта с адресом: г. Санкт-петербург, ул. Большая Конюшенная, 19" width="590" height="624">
-                        </div>
-                    </div>
-               </div>
+                        </div>                       
+                        <img src="./pictures/map.png" alt="Картинка карта с адресом: г. Санкт-петербург, ул. Большая Конюшенная, 19" width="590" height="624">                       
+                    </div>              
             </section>
         </main>
 
         <footer>
             <div class="footer">
-                <a href="tel:+79818574624" class="link phone-link">+7 (981) 857-46-24</a>
-                <address>г. Санкт-петербург, ул. Большая Конюшенная, 19</address>
+                <a href="tel:+79818574624" class="link phone-link footer-phone-link">+7 (981) 857-46-24</a>
+                <address class="address">г. Санкт-петербург, ул. Большая Конюшенная, 19</address>
                 <span>ИП Королёва А.А.</span>
             </div>
         </footer>
