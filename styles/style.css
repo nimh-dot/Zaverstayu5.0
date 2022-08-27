@@ -20,17 +20,11 @@
 
 
 body {
-    position: relative;
-	margin: 0 auto;
-	padding: 0;
     font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #533738; 
     background: #EFE6E4;
-    width: 1400px; 
 }
 
 .link {
@@ -63,6 +57,8 @@ body {
 	flex-wrap: wrap;
     list-style: none;
 }
+
+/* header */
 
 .header {
     position: absolute;
@@ -120,19 +116,24 @@ body {
 
 /* hero */
 
-
-
 .main-section{
-    background: url(../pictures/background.jpg) no-repeat center;
+    background-color: #F9EAE1;
+    background-image: url(../pictures/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 152px;
-	padding-bottom: 170px;
+    padding-top: 36px;
+    min-height: 715px;
 }
 
-.wrapper-main {
+.wrapper-main1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 0;
+
+}
+
+.main-content{
     width: 534px;
     margin-left: auto;
 }
@@ -187,10 +188,6 @@ body {
     padding-bottom: 40px;
 }
 
-.about-text p:first-child {
-    margin-top: 0px;
-}
-
 .container {
     max-width: 1400px;
     box-sizing: border-box;
@@ -207,42 +204,58 @@ body {
 
 .about-text {
     width: 528px;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 18px;
-    line-height: 30px;
 }
 
+.about-text p:first-child {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.about-text p:nth-child(2) {
+    margin-bottom: 0;
+}
+
+/* advantages */
+
 .advantages {
-    box-sizing: border-box;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
     background-color: #8D7370;
     color: #FFFFFF;
     margin-bottom: 65px;
 }
 
+.advantages-wrapper{
+    width: 1038px;
+    margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 .advantages-list {
-    width: 1400px;
 	display: flex;
 	flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 81px 0;
-    padding: 0;
+    justify-content: space-between;
+    padding: 85px 0 81px 0;
+    margin: 0;
 }
 
 .advantages-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
 .advantages_stat-number{
     font-size: 50px;
     line-height: 62px;
+    margin-bottom: 8px;
 }
 
 .advantages_stat-description{
@@ -253,6 +266,7 @@ body {
 }
 
 /* Portfolio */
+
 .portfolio{
     width: 1200px;
     margin: 0 auto;
@@ -317,6 +331,7 @@ body {
     position: relative;
     background-color: transparent;
     border: 0;
+    padding-right: 70px;
 }
 
 .portfolio-button::after {
@@ -328,11 +343,11 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    right: -70px;
+    right: -4px;
     top: 14px;
 }
 
-/* Team */
+/* team */
 
 .team,
 .how-to-do{
@@ -363,11 +378,15 @@ body {
 
 
 .team-text{
-    
+    width: 318px;
+    margin: 0;
 }
+
+/* work_projects */
 
 .work-title{
     margin-bottom: 40px;
+    padding-left: 44px;
 }
 
 .work-wrapper{
@@ -413,6 +432,7 @@ body {
 .work-text{
     width: 285px;
     text-align: center;
+    margin: 0;
 }
 
 /* review */
@@ -456,7 +476,6 @@ body {
     align-self: center;
 }
 
-
 .review-button::before {
     content: "";
     position: absolute;
@@ -489,8 +508,8 @@ body {
 /* feedback */
 
 .feedback{
-    width: 1400px;
     background-color: #8D7370;
+    margin: 0 auto;
 }
 
 .feedback-wrapper {
