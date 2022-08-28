@@ -390,7 +390,7 @@ button:focus{
 .work-wrapper{
     width: 1200px;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .work-list{
@@ -401,6 +401,21 @@ button:focus{
     margin: 0 auto;
     counter-reset: li;   
 }
+
+/* xmas start */
+
+.work-list::after{
+    content: "Кекс кодит за сосики";
+    margin: 0 auto;
+    color: #E2C4BA;
+    
+}
+
+.work-list:hover::after{
+    filter: drop-shadow(3px 3px 2px #533738);
+}
+
+/* xmas end */
 
 .work-item{
     position: relative;
