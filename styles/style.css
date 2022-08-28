@@ -91,7 +91,6 @@ button:focus{
 }
 
 .header-nav-list{
-    padding: 0;
     margin: 0;
 }
 
@@ -125,9 +124,9 @@ button:focus{
 
 /* hero */
 
-.main-section{
+.hero-section{
     background-color: #F9EAE1;
-    background-image: url(../pictures/background.jpg);
+    background-image: url(../pictures/hero_bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -135,57 +134,42 @@ button:focus{
     padding-bottom: 168px;
 }
 
-.wrapper-main{
+.hero-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 1036px;
     margin: 0 auto;
 }
 
-.main-content{
+.hero-content{
     width: 534px;
-    margin-left: auto;
 }
 
-.main-title {
-    font-style: normal;
+.hero-title{
     font-weight: 400;
     font-size: 50px;
     line-height: 62px;
-    color: #533738;
     margin-top: 0;
     margin-bottom: 20px;
 }
 
-.main-intro {
-    width: 535px;
-    margin-left: 184px;
-}
-
-.main-text {
+.hero-text{
     margin-bottom: 25px;
     padding-right: 120px;
 }
 
-.main-link-a {
+.hero-link{
     display: inline-block;
-    box-sizing: border-box;
     padding: 25px 68px;
     background-color: #CC8B86;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    color: #553738;
-    text-decoration: none;
 }
 
 /* about */
 
-.wrapper-about {
-    margin: 0 auto;
-}
-
-.half-container{
+.about-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -196,16 +180,6 @@ button:focus{
     width: 1200px;
     padding-top: 65px;
     padding-bottom: 40px;
-}
-
-.container {
-    max-width: 1400px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 82px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 21px;
 }
 
 .about_img {
@@ -253,7 +227,6 @@ button:focus{
 	flex-wrap: wrap;
     justify-content: space-between;
     padding: 85px 0 81px 0;
-    margin: 0;
 }
 
 .advantages-item {
@@ -342,7 +315,6 @@ button:focus{
     align-self: center;
     font-weight: 500;
     font-size: 30px;
-    text-decoration: none;
     color: inherit;
     position: relative;
     background-color: transparent;
@@ -391,9 +363,8 @@ button:focus{
 .team-list{
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding: 0 0 35px 0;
     margin: 0;
-    padding-bottom: 35px;
 }
 
 .team-unit{
@@ -411,7 +382,7 @@ button:focus{
     margin: 0;
 }
 
-/* work_projects */
+/* how-to-do */
 
 .work-title{
     margin-bottom: 40px;
@@ -428,7 +399,6 @@ button:focus{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
     padding: 0;
     margin: 0 auto;
     counter-reset: li;   
@@ -476,7 +446,6 @@ button:focus{
 }
 
 .review-list{
-    margin: 0;
     padding: 0;
     display: block;
 }
@@ -489,7 +458,6 @@ button:focus{
 }
 
 .review-photo{
-    width: 407px;
     display: flex;
     flex-direction: column;
     row-gap: 24px;
@@ -608,7 +576,6 @@ button:focus{
 }
 
 .form-button{
-    box-sizing: border-box;
     padding: 25px 68px;
     background-color: #CC8B86;
     font-weight: 500;
@@ -617,6 +584,27 @@ button:focus{
     color: #533738;
     border: none;
     cursor: pointer;
+}
+
+.map{
+    position: relative;
+    display: flex;
+    width: 590px;
+    height: 624px;
+}
+
+.map-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: auto;
+}
+
+.map-google{
+    z-index: 1;
+    height: auto;
+    border: none;
 }
 
 /* footer */
